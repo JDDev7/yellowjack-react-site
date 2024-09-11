@@ -12,7 +12,7 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
  
     return (
-    <section id="home" className='home-section' >
+    <section id="inicio" className='home-section' >
         <motion.div className='hero-container' onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
             <motion.div {...appearFromLeft} className="left-side">
                 <img src={logo} alt="logo-hero-section" className='logo-hero'/>

@@ -19,3 +19,14 @@ export const appearFromLeft = {
       visible: { opacity: 1, x: 0 },
     },
   };
+
+  export const appearFromBottom = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: true, amount: 0.3 },
+    transition: { delay: 0.2, duration: 0.3 },
+    variants: {
+      hidden: { opacity: 0, y: 50 },
+      visible: { opacity: 1, y: 0 },
+    },
+  };

@@ -261,10 +261,165 @@ body {
   color: var(--primary);
 }
 
+/* Products Cards and Views */
 
+.our-products {
+  background-color: #131313;
+  background-image: url('./assets/carta-bg.webp');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(18rem, 275px)); /* Set a minimum width for each column */
+  grid-auto-columns: 200px; /* Set the width of each fraction to the same width as the .product-img */
+  width: 100%;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: center; /* Center the grid */
+  align-items: center;
+  
+}
+
+.non-alcohol-view {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(18rem, 275px)); /* Set a minimum width for each column */
+  grid-auto-columns: 200px; /* Set the width of each fraction to the same width as the .product-img */
+  width: 100%;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: center; /* Center the grid */
+  align-items: center;
+}
+
+
+.food-view {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(18rem, 275px)); /* Set a minimum width for each column */
+  grid-auto-columns: 200px; /* Set the width of each fraction to the same width as the .product-img */
+  width: 100%;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: center; /* Center the grid */
+  align-items: center;
+}
+
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.product-info h3 {
+  text-align: start;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.product-info p, .product-price p {
+  text-align: start;
+  font-size: 1rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--navbar-background-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 8px solid rgba(147, 112, 76, 0.6);
+  color: white;
+  font-family: var(--font-merriweather);
+  margin-top: 1.25rem;
+  min-height: 30rem;
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 1rem;
+
+}
+
+.product-info {
+  text-align: center;
+  width: 100%;
+  line-height: 1.5rem;
+  
+}
+
+/* cards view tabs */
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 0 2rem;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbar-background-color);
+  z-index: 30;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 2rem;
+  height: fit-content;
+  justify-content: center;
+}
+
+.tabs button {
+  background-color: var(--navbar-background-color);
+  color: white;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-merriweather);
+  border: none;
+  border-bottom: 2px solid transparent; /* add this line */
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.tab-underline {
+  border-bottom: 2px solid var(--primary); /* adjust the color and width to your liking */
+}
+
+.tab-underline.selected {
+  border-bottom-color: var(--primary); /* adjust the color to your liking */
+}
+
+.tabs .selected button  {
+  border-bottom-color: var(--primary);
+}
+
+.tabs button:hover {
+  border-bottom-color: var(--primary);
+}
 
 /* media querys */
 @media (min-width: 1060px) and (max-width: 1400px) {
+/* Home section tablets */
   .home-section {
     height: 100vh;
   }
@@ -275,7 +430,31 @@ body {
   }
 }
 
+/* Products section tablets */
+
+.view {
+  grid-template-columns: repeat(3, minmax(18rem, 275px));
+}
+
+.food-view {
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(18rem, 275px));
+}
+
+@media (min-width: 700px) and (max-width: 1050px) {
+  .view {
+    grid-template-columns: repeat(2, minmax(18rem, 275px));
+  }
+
+  .non-alcohol-view {
+    grid-template-columns: repeat(3, minmax(15rem, 275px));
+  }
+
+}
+
 @media (max-width: 1060px) {
+
+/* Home section small screens */
 
   .home-section {
     height: 100vh;
@@ -319,5 +498,19 @@ body {
     margin: 0 auto;
     padding: 0.5rem;
   }
+
+
+}
+
+/* very small screens (phone) */
+
+@media (min-width: 300px) and (max-width: 700px) {
+
+    /* Products section small screens */
   
+  .view, 
+  .non-alcohol-view, 
+  .food-view {
+    grid-template-columns: repeat(1, minmax(18rem, 275px));
+  }
 }
