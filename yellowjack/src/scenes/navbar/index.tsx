@@ -81,22 +81,22 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
           {/* menu-items */}
           <div className="mobile-menu-items">
             <Link
-              page="Home"
+              page="Inicio"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Products"
+              page="Nuestra Carta"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Events"
+              page="Eventos"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Contact Us"
+              page="Contacto"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
