@@ -451,6 +451,11 @@ body {
     grid-template-columns: repeat(3, minmax(15rem, 275px));
   }
 
+  .food-view {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(18rem, 275px));
+  }
+
 }
 
 @media (max-width: 1060px) {
