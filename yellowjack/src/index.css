@@ -427,19 +427,20 @@ body {
   .hero-container {
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+  }
+  /* Products section tablets */
+  .view {
+    grid-template-columns: repeat(3, minmax(18rem, 275px));
+  }
+  
+  .food-view {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(18rem, 275px));
   }
 }
 
-/* Products section tablets */
 
-.view {
-  grid-template-columns: repeat(3, minmax(18rem, 275px));
-}
-
-.food-view {
-  width: 100%;
-  grid-template-columns: repeat(2, minmax(18rem, 275px));
-}
 
 @media (min-width: 700px) and (max-width: 1050px) {
   .view {
