@@ -3,6 +3,7 @@ import { SelectedPage } from "@/shared/types";
 import Home from "@/scenes/Home";
 import { useEffect, useState } from "react";
 import SectionSeparation from "./components/SectionSeparation";
+import Eventos from "@/scenes/eventos";
 
 import NuestraCarta from "./scenes/nuestraCarta";
 function App() {
@@ -26,8 +27,10 @@ function App() {
     <>
      <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Navbar>
      <Home setSelectedPage={setSelectedPage}></Home>
-     <SectionSeparation titleSpan="Nuestra" title="Carta"/>
+     <SectionSeparation titleSpan="Nuestra" title=" Carta"/>
      <NuestraCarta setSelectedPage={setSelectedPage}></NuestraCarta>
+     <SectionSeparation titleSpan="E" title="ventos"/>
+     <Eventos setSelectedPage={setSelectedPage}></Eventos>
     </>
   )
 }
