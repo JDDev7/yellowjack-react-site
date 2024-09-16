@@ -3,6 +3,9 @@ import { MapPinIcon } from '@heroicons/react/24/solid'
 import YellowJackMap from '@/assets/map.webp'
 import ActionButton from '@/components/ActionButton';
 import Eventos from '@/scenes/eventos';
+import { motion } from 'framer-motion';
+import { slowTransition } from '@/shared/animations';
+
 
 // Define the possible views for the YellowJackAddressView component
 type View = 'default' | 'eventos';
@@ -17,20 +20,20 @@ const YellowJackAddressView = () => {
       {/* Render the default view */}
       {currentView === 'default' && (
         <div className='yellowjack-address-container'>
-          <div className='yellowjack-address-title'>
+          <motion.div  {...slowTransition} className='yellowjack-address-title'>
             <h1>Encuentranos en:</h1>
             <MapPinIcon className='yellowjack-address-icon'></MapPinIcon>
-          </div>
-          <div className='yellowjack-address-text'>
+          </motion.div >
+          <motion.div  {...slowTransition} className='yellowjack-address-text'>
             <p>Panorama Drive, Oeste, Sale Shores, en el cruce hacia la Ruta 68</p>
-          </div>
-          <div className='map-image-container'>
+          </motion.div >
+          <motion.div  {...slowTransition} className='map-image-container'>
             <img src={YellowJackMap} alt="yellow-jack-map" />
-          </div>
-          <div className='yellowjack-address-button'>
+          </motion.div >
+          <motion.div  {...slowTransition} className='yellowjack-address-button'>
             {/* Render an ActionButton to switch to the Eventos view */}
             <ActionButton children="Volver a Eventos" onViewChange={() => setCurrentView('eventos')}></ActionButton>
-          </div>
+          </motion.div >
         </div>
       )}
       {/* Render the Eventos view */}
