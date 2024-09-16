@@ -1,8 +1,10 @@
 import ActionButton from '@/components/ActionButton';
+import { appearFromBottom, appearFromTop } from '@/shared/animations';
 import { SelectedPage } from '@/shared/types'
 import YellowJackAddressView from '@/views/YellowJackAddressView';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -18,11 +20,11 @@ const Eventos = ({ setSelectedPage }: Props) => {
       {currentView === 'default' && (
         <motion.div className='eventos-container' onViewportEnter={() => setSelectedPage(SelectedPage.OurEvents)}>
           {/* Parte Izquierda */}
-          <motion.div className='eventos-imgs'>
+          <motion.div {...appearFromTop} className='eventos-imgs'>
               <img src="src/assets/eventos.webp" alt="imagen-eventos" />
           </motion.div>
           {/* Parte Derecha */}
-          <motion.div className='eventos-text'>
+          <motion.div {...appearFromBottom} className='eventos-text'>
               <h2 className='eventos-title'>
                   <span className='span-text-color'>Nuestros</span> Eventos      
               </h2>
