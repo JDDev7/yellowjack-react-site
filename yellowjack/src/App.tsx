@@ -4,8 +4,8 @@ import Home from "@/scenes/Home";
 import { useEffect, useState } from "react";
 import SectionSeparation from "./components/SectionSeparation";
 import Eventos from "@/scenes/eventos";
-
 import NuestraCarta from "./scenes/nuestraCarta";
+import Contacto from "@/scenes/contacto";
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
 
@@ -31,6 +31,8 @@ function App() {
      <NuestraCarta setSelectedPage={setSelectedPage}></NuestraCarta>
      <SectionSeparation titleSpan="E" title="ventos"/>
      <Eventos setSelectedPage={setSelectedPage}></Eventos>
+     <SectionSeparation titleSpan="C" title="ontacto"></SectionSeparation>
+     <Contacto setSelectedPage={setSelectedPage}></Contacto>
     </>
   )
 }

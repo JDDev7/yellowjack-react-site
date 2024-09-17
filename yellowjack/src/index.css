@@ -443,7 +443,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .eventos-imgs img {
@@ -548,6 +548,98 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Contact section */
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: url("./assets/header-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+
+
+.contacto-title-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: var(--font-merriweather);
+  color: white;
+  text-shadow: 5px 3px 3px var(--navbar-background-color);
+}
+
+.contacto-title-container .span-text-color {
+  color: var(--primary);
+}
+
+.contacto-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.contacto-text {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-merriweather);
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 5px 3px 3px var(--navbar-background-color);
+}
+
+.contacto-text-titles {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-merriweather);
+  text-shadow: 5px 3px 3px var(--navbar-background-color);
+  color: white;
+}
+
+.contacto-input {
+  border: 2px solid var(--text-primary-hover);
+  font-size: 1rem;
+  font-family: var(--font-montserrat);
+  width: 80%;
+  max-width: 500px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contacto-textarea {
+  border: 2px solid var(--text-primary-hover);
+  font-size: 1rem;
+  font-family: var(--font-montserrat);
+  width: 80%;
+  max-width: 700px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  resize: none;
+}
+
+.error-text {
+  color: rgb(185, 90, 90);
+  font-weight: bold;
+  font-family: var(--font-merriweather);
+  font-size: 1rem;
+  text-shadow: 2px 2px 2px var(--navbar-background-color);
 }
 
 /* media querys */
