@@ -6,6 +6,8 @@ import SectionSeparation from "./components/SectionSeparation";
 import Eventos from "@/scenes/eventos";
 import NuestraCarta from "./scenes/nuestraCarta";
 import Contacto from "@/scenes/contacto";
+import Footer from "@/components/Footer";
+
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
 
@@ -33,6 +35,7 @@ function App() {
      <Eventos setSelectedPage={setSelectedPage}></Eventos>
      <SectionSeparation titleSpan="C" title="ontacto"></SectionSeparation>
      <Contacto setSelectedPage={setSelectedPage}></Contacto>
+     <Footer></Footer>
     </>
   )
 }
