@@ -1,0 +1,12 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import Logo from "@/assets/Logo-small.webp";
+import Link from "@/components/Link";
+import useMediaQuery from "@/hooks/useMediaQuery";
+const Navbar = ({ selectedPage, setSelectedPage }) => {
+    const [isMenuToggled, setIsMenuToggled] = useState(false);
+    const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+    return (_jsxs("nav", { children: [_jsx("div", { className: "navbar flex-between-center", children: _jsx("div", { className: "flex-between-center nav-wrapper", children: _jsxs("div", { className: "flex-between-center nav-content", children: [_jsx("img", { src: Logo, alt: "logo-small", className: "logo" }), isAboveMediumScreens ? (_jsxs("div", { className: "flex-between-center links-parent-container", children: [_jsxs("div", { className: "flex-between-center links-container", children: [_jsx(Link, { page: "Inicio", selectedPage: selectedPage, setSelectedPage: setSelectedPage }), _jsx(Link, { page: "Nuestra Carta", selectedPage: selectedPage, setSelectedPage: setSelectedPage }), _jsx(Link, { page: "Eventos", selectedPage: selectedPage, setSelectedPage: setSelectedPage }), _jsx(Link, { page: "Contacto", selectedPage: selectedPage, setSelectedPage: setSelectedPage })] }), _jsxs("div", { className: "flex-between-center", children: [_jsx("p", { className: "login-text", children: "Entrar/Registrarse" }), " "] })] })) : (_jsx("button", { className: "mobile-menu-btn", onClick: () => setIsMenuToggled(!isMenuToggled), children: _jsx(Bars3Icon, { className: "mobile-menu-icon" }) }))] }) }) }), !isAboveMediumScreens && isMenuToggled && (_jsxs("div", { className: "mobile-menu-container", children: [_jsx("div", { className: "close-button-container", children: _jsx("button", { className: "close-menu-btn", onClick: () => setIsMenuToggled(!isMenuToggled), children: _jsx(XMarkIcon, { className: "close-menu-icon" }) }) }), _jsxs("div", { className: "mobile-menu-items", children: [_jsx(Link, { page: "Inicio", selectedPage: selectedPage, setSelectedPage: setSelectedPage }), _jsx(Link, { page: "Nuestra Carta", selectedPage: selectedPage, setSelectedPage: setSelectedPage }), _jsx(Link, { page: "Eventos", selectedPage: selectedPage, setSelectedPage: setSelectedPage }), _jsx(Link, { page: "Contacto", selectedPage: selectedPage, setSelectedPage: setSelectedPage })] })] }))] }));
+};
+export default Navbar;
