@@ -33,19 +33,19 @@ export const alcohol = {
     ronCola: {
         img: ronCola,
         name: 'Ron con Cola',
-        description: 'Ron y cola, un clásico de la casa.',
+        description: 'Ron, cola y limón. La mejor combinación.',
         price: 75
     },
     whiskyCola: {
         img: whiskyCola,
         name: 'Whisky con Cola',
-        description: 'Whisky con Cola, para los que le gusta una mezcla dulce y fuerte.',
+        description: 'Whisky con cola y limón, para los que le gusta una mezcla dulce y fuerte.',
         price: 70
     },
     whisky: {
         img: whisky,
         name: 'Whisky',
-        description: 'Un buen whisky escocés, el desayuno de los campeones.',
+        description: 'Tenemos Irlandés, escocés, galés, canadiense y estadounidense. Tú eliges.',
         price: 180
     }
 };
@@ -73,19 +73,19 @@ export const comida = {
     alitas: {
         img: alitas,
         name: 'Alitas Marinadas',
-        description: 'Alitas de pollo marinadas con especias y salsa especial de la casa.',
+        description: 'Con salsa de soja, pimienta negra, limón, romero, tomillo, un chorro de coñac y, para los más valientes, una cucharadita de tabasco.',
         price: 50
     },
     chuleton: {
         img: chuleton,
         name: 'Chuletón',
-        description: 'Chuletón de buey, cocinado al estilo del chef Marco. Con guarnición a elección.',
+        description: 'Plato estrella de la casa: Chuletón de buey de 1kg a la brasa, especiado y acompañado de salsa barbacoa y patatas o ensalada.',
         price: 80
     },
     nachos: {
         img: nachos,
         name: 'Nachos',
-        description: 'Nachos con salsa picante o guacamole. El Snack perfecto.',
+        description: 'Nachos con carne de ternera, mezcla de quesos, tomate, cebolla y jalapeños.',
         price: 60
     },
     patatas: {

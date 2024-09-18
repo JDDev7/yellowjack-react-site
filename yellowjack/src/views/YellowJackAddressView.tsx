@@ -25,7 +25,7 @@ const YellowJackAddressView = () => {
             <MapPinIcon className='yellowjack-address-icon'></MapPinIcon>
           </motion.div >
           <motion.div  {...slowTransition} className='yellowjack-address-text'>
-            <p>Panorama Drive, Oeste, Sale Shores, en el cruce hacia la Ruta 68</p>
+            <p>Panorama Drive, Oeste, Sandy Shores, en el cruce hacia la Ruta 68</p>
           </motion.div >
           <motion.div  {...slowTransition} className='map-image-container'>
             <img src={YellowJackMap} alt="yellow-jack-map" />
