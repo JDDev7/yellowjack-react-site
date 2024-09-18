@@ -32,6 +32,19 @@ body {
   padding-top: 120px;
 }
 
+
+::-webkit-scrollbar{
+  width: 0.6rem;
+  background-color: #3c3c3c;
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom, #d4b048 0%, #866f2a 100%);
+  border-radius: 10px;
+}
+
+
 /* Navbar Links styling */
 
 .flex-between-center {
