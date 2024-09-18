@@ -1,8 +1,8 @@
 import React from 'react'
-import Instagram from '@/assets/square-instagram-brands-solid.svg'
-import Twitter from '@/assets/square-twitter-brands-solid.svg'
-import LinkedIn from '@/assets/linkedin-brands-solid.svg'
-import Github from '@/assets/square-github-brands-solid.svg'
+import Instagram from '../assets/square-instagram-brands-solid.svg'
+import Twitter from '../assets/square-twitter-brands-solid.svg'
+import LinkedIn from '../assets/linkedin-brands-solid.svg'
+import Github from '../assets/square-github-brands-solid.svg'
 
 const Footer = () => {
   return (

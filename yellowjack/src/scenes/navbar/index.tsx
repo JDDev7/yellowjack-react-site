@@ -1,6 +1,6 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import Logo from "@/assets/Logo-small.webp";
+import Logo from "../../assets/logo-small.webp";
 import Link from "@/components/Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
