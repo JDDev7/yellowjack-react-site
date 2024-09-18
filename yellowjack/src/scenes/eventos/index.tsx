@@ -4,6 +4,7 @@ import { SelectedPage } from '@/shared/types'
 import YellowJackAddressView from '@/views/YellowJackAddressView';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import EventosImg from '../../assets/eventos.webp'
 
 
 type Props = {
@@ -21,7 +22,7 @@ const Eventos = ({ setSelectedPage }: Props) => {
         <motion.div className='eventos-container' onViewportEnter={() => setSelectedPage(SelectedPage.OurEvents)}>
           {/* Parte Izquierda */}
           <motion.div {...appearFromTop} className='eventos-imgs'>
-              <img src="src/assets/eventos.webp" alt="imagen-eventos" />
+              <img src={EventosImg} alt="imagen-eventos" />
           </motion.div>
           {/* Parte Derecha */}
           <motion.div {...appearFromBottom} className='eventos-text'>
